@@ -16,8 +16,8 @@ public static void main(String[] args) {
 	}
 	ImageIcon iconB = new ImageIcon("candy.jpg");
 	//21 JellyBellies
-	String[] selectionValues = {"excited", "embarrased", "mutual", "sad", "angry", "bored", "happy", "guilty", "shameful"};
-	String b = (String) JOptionPane.showInputDialog(null,"Are you excited, embarrased, or mutual?",null,0,iconB,selectionValues,null);
+	String[] selectionValues = {"excited", "embarrased", "mutual", "sad", "angry", "bored", "happy", "guilty", "shameful", "sleepy"};
+	String b = (String) JOptionPane.showInputDialog(null,"what candycorn emoji feeling are you?",null,0,iconB,selectionValues,null);
 	JOptionPane.showMessageDialog(null, "Me Too!");
 	
 	//if(a.equals ("21")){
