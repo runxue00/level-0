@@ -10,7 +10,7 @@ public static void main(String[] args) {
 	int c = Integer.parseInt(tres);
 	if(a>b && b<c){
 		System.out.println(b);
-		if(a<c){
+		if(a<c);
 			
 		}
 		
