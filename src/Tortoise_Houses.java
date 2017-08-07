@@ -5,33 +5,80 @@ import org.jointheleague.graphical.robot.Robot;
 public class Tortoise_Houses {
 	public static void main(String[] args) {
 		//1. have the tortoise start in the bottom left corner
-  Robot HouseDrawer = new Robot();
-  HouseDrawer.setX(0);
-  HouseDrawer.setY(900);
+  Robot houseDrawer = new Robot();
+  //HouseDrawer.setX(0);
+  houseDrawer.moveTo(0, 500);
+  //HouseDrawer.setY(900);
+  //houseDrawer.
 		//2. draw a house of height 100 with grass after it. This shape: |**|_
-  HouseDrawer.penDown();
+  houseDrawer.penDown();
   
-  HouseDrawer.turn(90);
+  houseDrawer.setPenWidth(10);
   
-  HouseDrawer.move(200);
+  houseDrawer.setSpeed(210);
   
-  HouseDrawer.turn(-90);
+  houseDrawer.turn(90);
   
-  HouseDrawer.move(300);
+  houseDrawer.setPenColor(0,204,0);
+  houseDrawer.move(200);
   
-  HouseDrawer.turn(90);
+  for (int i = 0; i < 10; i++) {
+  houseDrawer.setPenColor(Color.black);
   
-  HouseDrawer.move(100);
+  houseDrawer.turn(-90);
   
-  HouseDrawer.turn(90);
+  houseDrawer.move(300);
   
-  HouseDrawer.move(300);
+  houseDrawer.turn(90);
   
-  HouseDrawer.turn(-90);
+  houseDrawer.move(100);
   
-  HouseDrawer.setPenColor(0, 204, 0);
-  HouseDrawer.move(100);
+  houseDrawer.turn(90);
   
+  houseDrawer.move(300);
+  
+  houseDrawer.turn(-90);
+  
+  houseDrawer.setPenColor(0,204,0);
+
+  houseDrawer.move(40);
+  
+  }
+  houseDrawer.move(40);
+  houseDrawer.setPenColor(Color.DARK_GRAY);
+  houseDrawer.turn(-90);
+  houseDrawer.move(100);
+  houseDrawer.turn(45);
+  houseDrawer.move(100);
+  houseDrawer.turn(90);
+  houseDrawer.move(100);
+  houseDrawer.turn(45);
+  houseDrawer.move(100);
+  houseDrawer.turn(-90);
+  houseDrawer.setPenColor(0,204,0);
+  houseDrawer.move(300);
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  //houseDrawer.setPenColor(0,204,0);
+  //houseDrawer.move(300);
   
   
 		//3. extract the piece of code that draws the house into a method. Draw 10 houses.
