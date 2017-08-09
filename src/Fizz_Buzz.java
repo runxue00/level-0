@@ -19,23 +19,32 @@ import javax.swing.JOptionPane;
 
 public class Fizz_Buzz {
 public static void main(String[] args) {
-	JOptionPane.showInputDialog("You wanna play Fizz Buzz?");
+	JOptionPane.showMessageDialog(null, "You wanna play Fizz Buzz?");
 	JOptionPane.showMessageDialog(null, "Let's play.");
-	for (int i = 0; i <= 20; i++) {
-		System.out.println(i);
-		if(i % 3 == 0){
-			System.out.println("Fizz");
+	
+	for (int i = 1; i <= 15; i++) {
+		if(i % 3 == 0 && i % 5 ==0){
+			System.out.println("Fizz Buzz");
 		}
-		if(i % 5 == 0){
+		else if(i % 3 == 0){
+			System.out.println("Fizz");
+		}else if(i % 5 == 0){
 			System.out.println("Buzz");
 		}
+	else{
+			System.out.println(i);
 		}
+		}
+	
 	
 
 	
-	}
-	
 }
+}
+	
+
+
+
 	
 	
 	
